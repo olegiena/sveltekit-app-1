@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --clr-black: 0 0 20;
+        --clr-blue: 5 15 65;
+    }
+}
+
+@layer components {
+    .menu-item-link {
+        @apply block px-12 font-medium tracking-wider text-xl transition-all duration-500 ease-in-out mt-3 group-hover:mt-0 text-gray-500 group-hover:text-white;
+    }
+    .menu-item-border {
+        @apply block mx-auto transition-all duration-500 ease-in-out opacity-0 group-hover:opacity-100 pt-10 group-hover:pt-5 rotate-180 group-hover:rotate-0 w-0 group-hover:w-1/4;
+    }
+}
